@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proj</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Modern+Antiqua&family=Unbounded:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <video src="/videos/bgvideo1.mp4" id="bgvideo"></video> -->
+    <div class="background"></div>
+    <video autoplay muted loop playsinline id="bgvideo">
+        <source src="./videos/1.mp4">
+    </video>
+    <div class="background"></div>
+    <div class="mainbox">
+        <div class="top-bar">
+            <div class="uper">
+                <span class="highlight" id="signbtn">Sign up</span>
+                <span class="highlight">Sign in</span>
+            </div>
+            <div class="close">✕</div>
+        </div>
+        <h2>Create an account</h2>
+        <form action="">
+            <div class="name-row">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+            </div>
+            <input type="email" placeholder="Enter your email" required>
+            <div class="phone">
+                <select class="country-code">
+                    <option value="+91" id="c1">India +91</option>
+                    <option value="+1">USA +1</option>
+                    <option value="+44">France +33</option>
+                    <option value="+61">New Zealand +64</option>
+                </select>
+                <input type="tel" placeholder=" Enter your number" required>
+            </div>
+            <div class="password-box">
+                <input type="password" placeholder="Enter your Password" id="Password" required>
+            </div>
+
+            <input type="submit" value="Create an account" class="create-btn">
+
+        </form>
+        <h1 class="divider">OR SIGN IN WITH</h1>
+        <div class="social">
+            <div class="socialbutton"><img src="/img/google.png" alt="" height="50px" class="ico1"></div>
+            <div class="socialbutton1"><img src="/img/apple64.png" alt="" class="ico2"></div>
+            <div class="socialbutton2"><img src="/img/facebook.png" alt="" class="ico3"></div>
+        </div>
+        <p class="terms">By creating an account, you agree to our Terms & Service</p>
+    </div>
+    </div>
+</body>
+
+</html>
